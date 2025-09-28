@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  # The RabbitMQ service
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    ports:
+      # Map host port 5672 to container port 5672 (for application connection)
+      - "5672:5672"
+      # Map host port 15672 to container port 15672 (for the management UI)
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+
+volumes:
+  rabbitmq_data:
