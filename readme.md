@@ -3,6 +3,20 @@
 
 ![microservice diagram](resource/diagram.png)
 
+---
+
+### Quick start — run locally
+
+ **Prerequisites**
+- Docker & Docker Compose installed.
+- Java JDK 21
+- Postman or any kind of API client or just curl.
+
+ 1) Run RabbitMQ with Docker Compose
+ 2) Run each services on intellij individually
+
+---
+
 ### 🔹 Common Design for Publisher → Consumer with RabbitMQ
 
 In **microservices architecture**, a common design is:

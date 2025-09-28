@@ -12,7 +12,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class OrderPublisher {
     private final RabbitTemplate rabbitTemplate;
-
+    
     public void publishTopic(String orderId) {
         rabbitTemplate.convertAndSend(
                 RabbitMQConfig.TOPIC_EXCHANGE,
