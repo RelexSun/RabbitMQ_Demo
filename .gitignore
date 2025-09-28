@@ -1,0 +1,84 @@
+### Java ###
+*.class
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Compiled files
+*.log
+*.ctxt
+*.out
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+
+# Virtual machine crash logs
+hs_err_pid*
+
+### Spring Boot ###
+/target/
+/build/
+/out/
+
+### IntelliJ IDEA ###
+.idea/
+/*.iml
+*.ipr
+*.iws
+.idea/*
+*.iml
+out/
+
+# Sonarlint / SonarQube
+/.idea/sonarlint
+/.sonar
+
+# IntelliJ Patch files
+*.diff
+*.patch
+*.orig
+*.rej
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.DS_Store?
+.fseventsd
+.apdisk
+
+### Logs ###
+*.log
+*.log.*
+logs/
+*.lck
+
+### Gradle ###
+.gradle/
+/build/
+
+# Ignore Gradle wrapper jar if not committing
+# gradle/wrapper/gradle-wrapper.jar
+
+### Maven ###
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+### Others ###
+*.swp
+*~
+.project
+.classpath
+.settings/
+.vscode/
